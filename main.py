@@ -12,6 +12,5 @@ shop_app.include_router(product_image.product_image_router)
 shop_app.include_router(subcategory.subcategory_router)
 setup_admin(shop_app)
 
-
 if __name__ == '__main__':
     uvicorn.run(shop_app, host="127.0.0.1", port=8000)
