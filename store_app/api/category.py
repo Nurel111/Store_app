@@ -1,9 +1,9 @@
 from email_validator import caching_resolver
 from fastapi import APIRouter, HTTPException, Depends
 from sqlalchemy import delete
-from shop_app.database.models import Category
-from shop_app.database.shema import CategoryInputSchema,CategoryOutSchema
-from shop_app.database.db import SessionLocal
+from store_app.database.models import Category
+from store_app.database.schema import CategoryInputSchema,CategoryOutSchema
+from store_app.database.db import SessionLocal
 from sqlalchemy.orm import Session
 from typing import List
 
